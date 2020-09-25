@@ -3,18 +3,18 @@
 namespace Radiocubito\LaravelPackageTools\Commands\Tests;
 
 use PHPUnit\Framework\TestCase;
+use Radiocubito\LaravelPackageTools\Commands\MakeCommand;
+use Radiocubito\LaravelPackageTools\Commands\MakeEvent;
+use Radiocubito\LaravelPackageTools\Commands\MakeJob;
+use Radiocubito\LaravelPackageTools\Commands\MakeNotification;
+use Radiocubito\LaravelPackageTools\Commands\MakeRequest;
+use Radiocubito\LaravelPackageTools\Commands\MakeRule;
 use Spatie\Snapshots\MatchesSnapshots;
 use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Radiocubito\LaravelPackageTools\Commands\MakeJob;
 use Symfony\Component\Console\Input\InputDefinition;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\BufferedOutput;
-use Radiocubito\LaravelPackageTools\Commands\MakeRule;
-use Radiocubito\LaravelPackageTools\Commands\MakeEvent;
-use Radiocubito\LaravelPackageTools\Commands\MakeCommand;
-use Radiocubito\LaravelPackageTools\Commands\MakeRequest;
-use Radiocubito\LaravelPackageTools\Commands\MakeNotification;
 
 class GenerationTest extends TestCase
 {
