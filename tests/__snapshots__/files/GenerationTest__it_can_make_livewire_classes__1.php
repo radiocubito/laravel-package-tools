@@ -1,6 +1,6 @@
 <?php
 
-namespace ExampleLivewire;
+namespace Radiocubito\LaravelPackageTools\Http\Livewire;
 
 use Livewire\Component;
 

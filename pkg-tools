@@ -3,13 +3,15 @@
 
 require 'vendor/autoload.php';
 
-use Silly\Application;
 use Radiocubito\LaravelPackageTools\Commands\MakeCommand;
-use Radiocubito\LaravelPackageTools\Commands\MakeRequest;
-use Radiocubito\LaravelPackageTools\Commands\MakeJob;
+use Radiocubito\LaravelPackageTools\Commands\MakeController;
 use Radiocubito\LaravelPackageTools\Commands\MakeEvent;
+use Radiocubito\LaravelPackageTools\Commands\MakeJob;
+use Radiocubito\LaravelPackageTools\Commands\MakeLivewire;
 use Radiocubito\LaravelPackageTools\Commands\MakeNotification;
+use Radiocubito\LaravelPackageTools\Commands\MakeRequest;
 use Radiocubito\LaravelPackageTools\Commands\MakeRule;
+use Silly\Application;
 
 $version = '1.0.0';
 
@@ -21,5 +23,7 @@ $app->command('make:job name [--sync] [--force]', new MakeJob);
 $app->command('make:event name [--force]', new MakeEvent);
 $app->command('make:notification name [--force]', new MakeNotification);
 $app->command('make:rule name [--force]', new MakeRule);
+$app->command('make:controller name [--force]', new MakeController);
+$app->command('make:livewire name [--force]', new MakeLivewire);
 
 $app->run();

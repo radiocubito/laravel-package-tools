@@ -1,6 +1,6 @@
 <?php
 
-namespace ExampleController;
+namespace Radiocubito\LaravelPackageTools\Http\Controllers;
 
 use Illuminate\Http\Request;
 
