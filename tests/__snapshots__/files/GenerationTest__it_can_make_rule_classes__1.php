@@ -1,10 +1,10 @@
 <?php
 
-namespace DummyNamespace;
+namespace Radiocubito\LaravelPackageTools\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
-class DummyClass implements Rule
+class ExampleRule implements Rule
 {
     public function passes($attribute, $value)
     {

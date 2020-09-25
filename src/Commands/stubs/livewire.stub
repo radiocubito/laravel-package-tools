@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyClass;
+
+use Livewire\Component;
+
+class DummyClass extends Component
+{
+    public function render()
+    {
+        return view();
+    }
+}

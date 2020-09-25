@@ -5,10 +5,12 @@ namespace Radiocubito\LaravelPackageTools\Events;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class ExampleTest__it_can_make_event_classes__1
+class ExampleEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 

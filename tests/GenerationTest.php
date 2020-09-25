@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Radiocubito\LaravelPackageTools\Commands\MakeCommand;
 use Radiocubito\LaravelPackageTools\Commands\MakeEvent;
 use Radiocubito\LaravelPackageTools\Commands\MakeJob;
+use Radiocubito\LaravelPackageTools\Commands\MakeLivewire;
 use Radiocubito\LaravelPackageTools\Commands\MakeNotification;
 use Radiocubito\LaravelPackageTools\Commands\MakeRequest;
 use Radiocubito\LaravelPackageTools\Commands\MakeRule;
@@ -144,5 +145,26 @@ class GenerationTest extends TestCase
 
         $this->assertTrue(file_exists($command->outputPath.'/Notifications/ExampleNotification.php'));
         $this->assertMatchesFileSnapshot($command->outputPath.'/Notifications/ExampleNotification.php');
+    }
+
+    /** @test */
+    public function it_can_make_livewire_classes()
+    {
+        $input = new ArrayInput([
+            'name' => 'ExampleLivewire',
+            '--force' => true,
+        ], new InputDefinition([
+            new InputArgument('name'),
+            new InputOption('force'),
+        ]));
+
+        $output = new BufferedOutput();
+
+        $command = new MakeLivewire;
+        $command->outputPath = __DIR__.'/output/';
+        $command->__invoke($input, $output);
+
+        $this->assertTrue(file_exists($command->outputPath.'/Http/Livewire/ExampleLivewire.php'));
+        $this->assertMatchesFileSnapshot($command->outputPath.'/Http/Livewire/ExampleLivewire.php');
     }
 }

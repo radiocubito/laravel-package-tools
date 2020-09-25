@@ -4,9 +4,10 @@ namespace Radiocubito\LaravelPackageTools\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class ExampleTest__it_can_make_notification_classes__1 extends Notification
+class ExampleNotification extends Notification
 {
     use Queueable;
 
