@@ -3,8 +3,8 @@
 namespace Radiocubito\LaravelPackageTools\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use Illuminate\Notifications\Messages\MailMessage;
 
 class ExampleTest__it_can_make_notification_classes__1 extends Notification
 {
