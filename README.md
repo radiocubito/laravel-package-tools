@@ -4,7 +4,7 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/radiocubito/laravel-package-tools/run-tests?label=tests)](https://github.com/radiocubito/laravel-package-tools/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/radiocubito/laravel-package-tools.svg?style=flat-square)](https://packagist.org/packages/radiocubito/laravel-package-tools)
 
-> This package is entirely based on BeyondCodes's laravel-package-tools(https://github.com/beyondcode/laravel-package-tools) package.
+> This package is entirely based on BeyondCodes's [laravel-package-tools](https://github.com/beyondcode/laravel-package-tools) package.
 
 Gives you the make: commands that you know and love from Laravel - outside of Laravel. Ready to use in your next package.
 
